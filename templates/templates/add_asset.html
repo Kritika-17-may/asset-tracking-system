@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Asset</title>
+</head>
+<body>
+
+    <h2>Add New Asset</h2>
+
+    <form method="POST">
+        <label>Asset Name:</label><br>
+        <input type="text" name="name" required><br><br>
+        <label>Category</label>
+<select name="category" class="form-control">
+    <option>Laptop</option>
+    <option>Mobile</option>
+    <option>Printer</option>
+    <option>Server</option>
+    <option>Network Device</option>
+</select>
+
+<br><br>
+        <label>Location:</label><br>
+        <input type="text" name="location" required><br><br>
+
+        <label>Status:</label><br>
+        <select name="status">
+            <option>Active</option>
+            <option>Under Maintenance</option>
+            <option>Inactive</option>
+        </select><br><br>
+
+        <button type="submit">Save Asset</button>
+    </form>
+
+    <br>
+    <a href="/">Back</a>
+
+</body>
+</html>

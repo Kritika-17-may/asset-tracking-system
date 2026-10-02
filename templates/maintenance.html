@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Maintenance</title>
+</head>
+
+<body>
+
+<h1>Maintenance Page</h1>
+
+<h2>Asset Name: {{ asset.name }}</h2>
+
+<form method="POST">
+
+    <label>Issue</label>
+    <input type="text" name="issue" required>
+
+    <br><br>
+
+    <label>Date</label>
+    <input type="date" name="date" required>
+
+    <br><br>
+
+    <label>Cost</label>
+    <input type="number" name="cost" step="0.01" required>
+
+    <br><br>
+
+    <label>Status</label>
+    <select name="status">
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+        <option value="Cancelled">Cancelled</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit">
+        Save Maintenance
+    </button>
+
+</form>
+
+</body>
+
+</html>
